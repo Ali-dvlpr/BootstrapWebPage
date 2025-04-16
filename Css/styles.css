@@ -1,0 +1,209 @@
+*{
+  font-family: "Kanit", sans-serif; 
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: white;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*reglas generales*/
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+.seccion-titulo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 15px 0;
+  font-style: normal;
+}
+.seccion-texto {
+  font-size: 1.1rem;
+  font-weight: 250;
+  text-align: justify;
+}
+
+/*Seccion principal*/
+.principal {
+  background-color: white;
+  min-width: 450px;
+  text-align: center;
+}
+
+.principal-sup {
+  display: flex;
+  flex-direction: column; /* Por defecto en pantallas grandes */
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.img-principal-sup {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.principal-sup h2 {
+  font-size: 16px;
+}
+
+.img-principal-inf {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+/* Quienes somos */
+.qsomos {
+  height: 250px;
+  padding: 10px;
+}
+.qsomos .contenedor {
+  max-width: 1000px;
+  text-align: center;
+}
+
+/*Tarjetas*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.qsomos {
+  height: 150px;
+  padding: 20px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+ margin: 10px
+}
+
+.card-img-top{
+  height: 250px;
+  width: 250px;
+}
+
+.btn{
+  width: 100%;
+  text-align: center;
+}
+
+/*Carrusel*/
+.carousel-custom {
+  width: 60%;
+  max-width: 800px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/*Footer*/
+
+#card1{
+  background-color: #1b1b32;
+}
+
+#card2{
+  background-color: #1b1b32;
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  /* Cambiar sección principal a columna */
+  section {
+    flex-direction: column;
+    align-items: center; /* Asegurar alineación centrada */
+    justify-content: center;
+  }
+
+  /* Cambiar contenido superior a columna */
+  .principal-sup {
+    flex-direction: column;
+    align-items: center; /* Asegurar alineación centrada */
+    padding: 1rem; /* Ajustar espacio para pantallas pequeñas */
+  }
+
+  .principal-sup h1 {
+    font-size: 1.5rem;
+  }
+
+  .principal-sup h2 {
+    font-size: 15px;
+  }
+
+  .principal-inf img {
+    max-width: 400px;
+  }
+
+  .seccion-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 15px 0;
+    font-style: normal;
+  }
+  .seccion-texto {
+    font-size: 13px;
+    font-weight: 250;
+    text-align: justify;
+  }
+  
+
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    margin-bottom: 20px;
+  }
+}
